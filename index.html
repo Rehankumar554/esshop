@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESShop - Home</title>
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/navbar-responsive.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="Image/Favicon.png" type="image/x-icon" />
+
+    <!-- font-family: "Edu AU VIC WA NT Guides", cursive; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font-family: "Playwrite GB S", cursive; -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font-family: "Ubuntu", sans-serif;  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    @media (max-width: 1090px) {
+      .tshirt_img img {
+        width: 480px;
+      }
+
+      .wel h1 {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      .tshirt_img img {
+        width: 450px;
+      }
+
+      .deals {
+        font-size: 18px;
+      }
+
+      .exb {
+        width: 100px;
+        font-size: 11px;
+        height: 30px;
+      }
+    }
+
+    @media (max-width: 990px) {
+      .wel h1 {
+        font-size: 1.7rem;
+      }
+    }
+
+    @media (max-width: 917px) {
+      .tshirt_img img {
+        width: 420px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .navigation .logo {
+        padding-right: 0px;
+      }
+
+      .navigation li {
+        padding-right: 12px;
+      }
+
+      .search {
+        margin-right: 10px;
+      }
+    }
+
+    @media (max-width: 887px) {
+      .wel h1 {
+        font-size: 1.5rem;
+      }
+
+      .tshirt_img img {
+        width: 400px;
+      }
+
+      .deals {
+        font-size: 17px;
+      }
+
+      .wel {
+        margin: 40px 0px 0px 60px;
+      }
+    }
+
+    @media (max-width: 781px) {
+      .tshirt_img img {
+        width: 380px;
+      }
+    }
+
+    @media (max-width: 761px) {
+      .tshirt_img img {
+        width: 350px;
+      }
+    }
+
+    @media (max-width: 730px) {
+      .deals {
+        font-size: 14px;
+      }
+
+      .wel h1 {
+        font-size: 20px;
+      }
+
+      .wel p {
+        font-size: 12px;
+      }
+
+      .exb {
+        font-size: 9px;
+        width: 75px;
+        height: 25px;
+      }
+    }
+
+    @media (max-width: 677px) {
+      .tshirt_img {
+        display: none;
+      }
+
+      .wel {
+        /* background-color: #c2e2fd; */
+        width: 100%;
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .wel h1 {
+        font-size: 2.2rem;
+      }
+
+      .wel p {
+        font-size: 1rem;
+      }
+
+      .exb {
+        font-size: 15px;
+        width: 110px;
+        height: 35px;
+      }
+    }
+  </style>
+  <body>
+    <!-- Loader  -->
+    <section>
+      <div class="loader" id="loader">
+        <svg class="pl" width="240" height="240" viewBox="0 0 240 240">
+          <circle
+            class="pl__ring pl__ring--a"
+            cx="120"
+            cy="120"
+            r="105"
+            fill="none"
+            stroke="#000"
+            stroke-width="20"
+            stroke-dasharray="0 660"
+            stroke-dashoffset="-330"
+            stroke-linecap="round"
+          ></circle>
+          <circle
+            class="pl__ring pl__ring--b"
+            cx="120"
+            cy="120"
+            r="35"
+            fill="none"
+            stroke="#000"
+            stroke-width="20"
+            stroke-dasharray="0 220"
+            stroke-dashoffset="-110"
+            stroke-linecap="round"
+          ></circle>
+          <circle
+            class="pl__ring pl__ring--c"
+            cx="85"
+            cy="120"
+            r="70"
+            fill="none"
+            stroke="#000"
+            stroke-width="20"
+            stroke-dasharray="0 440"
+            stroke-linecap="round"
+          ></circle>
+          <circle
+            class="pl__ring pl__ring--d"
+            cx="155"
+            cy="120"
+            r="70"
+            fill="none"
+            stroke="#000"
+            stroke-width="20"
+            stroke-dasharray="0 440"
+            stroke-linecap="round"
+          ></circle>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Model  -->
+    <section>
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Welcome, Rehan</h2>
+          </div>
+          <hr />
+          <div class="modal-body">
+            <h2>Order</h2>
+            <span><a href="#">Track Your Order</a></span>
+            <span><a href="#">Manage Your Order</a></span>
+            <span><a href="#">Buy Again</a></span>
+            <span><a href="#">Returns Center</a></span>
+            <span><a href="#">Delivery Speeds & Charges</a></span>
+          </div>
+          <hr />
+          <div class="modal-body">
+            <h2>Account</h2>
+            <span><a href="#">Lists</a></span>
+            <span><a href="#">Recommendation</a></span>
+            <span><a href="#">Search History</a></span>
+            <span><a href="#">Subscribe</a></span>
+            <span><a href="#">Recalls and Product Saftey Alerts</a></span>
+          </div>
+          <hr />
+          <div class="modal-body">
+            <h2>Setting</h2>
+            <span><a href="#">Sign-out</a></span>
+            <div class="ThemeMode">
+              <button id="light_mode">Light</button>
+              <button id="dark_mode">Dark</button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!-- <h3>Modal Footer</h3> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content   -->
+    <section id="dl">
+      <section class="upp_sec">
+        <nav class="navbar">
+          <div class="hamburegr" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="navigation">
+            <li class="logo">
+              <a
+                href="index.html"
+                style="height: 50px; display: flex; align-items: center"
+                ><img
+                  src="../Image/Screenshot_2024-10-18_100740-transformed__1_-removebg-preview (1).png"
+                  alt="Error Loading Image"
+                  width="220"
+              /></a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Contact</a></li>
+            <input
+              type="search"
+              class="search"
+              id="typewriter-input"
+              placeholder=""
+            />
+          </ul>
+          <ul class="shop" id="shop">
+            <li><a href="shop/shop.html">Shop</a></li>
+            <li>
+              <a href="#"
+                ><svg
+                  id="mySvg"
+                  height="30"
+                  viewBox="0 0 48 48"
+                  width="30"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="margin-top: 5px; margin-left: 10px"
+                >
+                  <defs>
+                    <radialGradient id="gradient" cx="2.9%" cy="15%" r="328px">
+                      <stop offset="0%" stop-color="#5b90bf" />
+                      <stop offset="25.8%" stop-color="#707197" />
+                      <stop offset="50.8%" stop-color="#846392" />
+                      <stop offset="77.6%" stop-color="#54a1a1" />
+                      <stop offset="100.7%" stop-color="#649790" />
+                    </radialGradient>
+                  </defs>
+                  <path
+                    fill="url(#gradient)"
+                    d="M14 36c-2.21 0-3.98 1.79-3.98 4s1.77 4 3.98 4 4-1.79 4-4-1.79-4-4-4zM2 4v4h4l7.19 15.17-2.7 4.9c-.31.58-.49 1.23-.49 1.93 0 2.21 1.79 4 4 4h24v-4H14.85c-.28 0-.5-.22-.5-.5 0-.09.02-.17.06-.24L16.2 26h14.9c1.5 0 2.81-.83 3.5-2.06l7.15-12.98c.16-.28.25-.61.25-.96 0-1.11-.9-2-2-2H10.43l-1.9-4H2zm32 32c-2.21 0-3.98 1.79-3.98 4s1.77 4 3.98 4 4-1.79 4-4-1.79-4-4-4z"
+                  />
+                  <circle
+                    id="badge"
+                    cx="38"
+                    cy="6"
+                    r="6"
+                    fill="red"
+                    class="badge"
+                  />
+                  <!-- Adjusted position -->
+                  <path d="M0 0h48v48H0z" fill="none" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <ul class="log">
+            <li class="hoversf">
+              <button
+                type="submit"
+                name="signin"
+                onclick="document.location='auth/auth.html'"
+              >
+                Sing in
+              </button>
+            </li>
+            <li class="hoversh">
+              <button
+                type="submit"
+                name="signup"
+                onclick="document.location='auth/auth.html'"
+              >
+                Sign up
+              </button>
+            </li>
+          </ul>
+          <ul class="user">
+            <li>
+              <button id="myBtn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 -960 960 960"
+                  fill="#5f6368"
+                  class="upl"
+                >
+                  <path
+                    d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"
+                  />
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <section class="mid_sec">
+        <div class="wel">
+          <h1>Welcome To <span id="typewriter-text"></span></h1>
+          <p>The Best Online Printed T-shirt Shop</p>
+          <button id="toggleBadge" style="display: none">Toggle Badge</button>
+          <div class="exd">
+            <button class="exb" style="margin-right: 20px">Explore More</button>
+            <button class="exb">Shop Now</button>
+          </div>
+          <div class="deals">
+            <span
+              ><b>Unlock Exclusive Deals</b> — Up to
+              <span
+                style="
+                  background-color: #c2e2fd;
+                  padding: 1px;
+                  border-radius: 7px;
+                  font-weight: bold;
+                "
+                >60%</span
+              >
+              Off!</span
+            >
+            <span
+              >On
+              <b>November 1<sup>st</sup> - November 15<sup>th</sup></b></span
+            >
+            <span>Don’t miss this <b>limited-time offer!</b></span>
+          </div>
+        </div>
+        <div class="tshirt_img" id="tshirt_img">
+          <img
+            src="Image/Untitled_design__1_-removebg-preview.png"
+            alt="Error Loading Image"
+            width="520px"
+            style="padding: 20px 0px 0px 0px"
+          />
+        </div>
+      </section>
+    </section>
+
+    <script>
+      const toggleButton = document.getElementById("toggleBadge");
+      const badge = document.getElementById("badge");
+
+      toggleButton.addEventListener("click", () => {
+        // Toggle badge visibility
+        badge.classList.toggle("badge");
+      });
+    </script>
+    <script src="script/search-query.js"></script>
+    <script src="script/inputtypewritereffect.js"></script>
+    <script src="script/texttypewritereffect.js"></script>
+    <script src="script/navbar-responsive.js"></script>
+    <script src="script/loader.js"></script>
+    <script src="script/profile.js"></script>
+    <script src="script/theme_index.js"></script>
+  </body>
+</html>

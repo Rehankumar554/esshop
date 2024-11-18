@@ -1,0 +1,54 @@
+<header id="sticky-header">
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<style>
+  #sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* adjust the height to your liking */
+    background-color: #333; /* adjust the color to your liking */
+    padding: 10px;
+  }
+
+  #sticky-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #sticky-header li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  #sticky-header a {
+    text-decoration: none;
+    color: #fff; /* adjust the color to your liking */
+  }
+</style>
+<script>
+  let header = document.getElementById("sticky-header");
+  let navHeight = header.offsetHeight;
+
+  window.addEventListener("scroll", () => {
+    let scrollTop = window.scrollY;
+    if (scrollTop > 0) {
+      if (scrollTop + window.innerHeight < navHeight) {
+        // scroll past the header
+      } else {
+        header.style.top = "0";
+        // adjust any other styles as needed
+      }
+    } else {
+      header.style.top = "60px"; /* restore original height */
+    }
+  });
+</script>

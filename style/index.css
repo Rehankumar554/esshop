@@ -1,0 +1,109 @@
+.mid_sec {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wel {
+  height: fit-content;
+  width: fit-content;
+  margin: 60px 0px 0px 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wel h1,
+p {
+  background: -moz-radial-gradient(
+    328px at 2.9% 15%,
+    #5b90bf 0%,
+    #707197 25.8%,
+    #846392 50.8%,
+    #54a1a1 77.6%,
+    #649790 100.7%
+  );
+  background: -webkit-radial-gradient(
+    328px at 2.9% 15%,
+    #5b90bf 0%,
+    #707197 25.8%,
+    #846392 50.8%,
+    #54a1a1 77.6%,
+    #649790 100.7%
+  );
+  background: radial-gradient(
+    328px at 2.9% 15%,
+    #5b90bf 0%,
+    #707197 25.8%,
+    #846392 50.8%,
+    #54a1a1 77.6%,
+    #649790 100.7%
+  );
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari */
+  color: transparent;
+  -webkit-text-fill-color: transparent; /* For Safari */
+  text-fill-color: transparent; /* For other browsers */
+  display: inline-block; /* Helps with clipping in some browsers */
+  font-family: "Playwrite GB S", cursive;
+}
+
+.wel h1 {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+#typewriter-text {
+  font-family: "Edu AU VIC WA NT Guides", cursive;
+}
+
+.log li a {
+  font-size: 17px;
+  font-family: "Playwrite GB S", cursive;
+}
+
+.tshirt_img {
+  display: flex;
+}
+
+.exd {
+  display: flex;
+}
+
+.exb {
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 5px;
+  background: aliceblue;
+  font-weight: bold;
+  font-size: 15px;
+  color: #5b90bf;
+  display: inline-block;
+  transition: all 235ms ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
+
+.exb:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.exb:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
+
+.deals {
+  display: flex;
+  margin-top: 30px;
+  font-size: 22px;
+  flex-direction: column;
+}
+
+.deals span {
+  color: #00ced1;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
